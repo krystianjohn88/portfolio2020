@@ -361,6 +361,9 @@ a:hover{
 }
 .portfolio-div{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .card {
     position: relative;
@@ -523,14 +526,138 @@ a:hover{
     margin: 40px;
 }
 @media(max-width: 1060px){
+    .html{
+    background-image: url(img/ikona-html.png);
+    width: 182px;
+    height: 128px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.css{
+    background-image: url(img/ikona-css.png);
+    width: 154px;
+    height: 128px;
+    position: absolute;
+    top: 20px;
+    left: 165px;
+    z-index: 5;
+}
+.js{
+    background-image: url(img/ikona-js.png);
+    width: 125px;
+    height: 128px;
+    position: absolute;
+    top: 95px;
+    left: 14px;
+    z-index: 5;
+}
+.pr{
+    background-image: url(img/ikona-pr.png);
+    width: 125px;
+    height: 128px;
+    position: absolute;
+    top: 100px;
+    left: 135px;
+    z-index: 3;
+}
+.php7{
+    background-image: url(img/ikona-php7.png);
+    width: 182px;
+    height: 128px;
+    position: absolute;
+    top: 200px;
+    z-index: 4;
+}
+.sql{
+    background-image: url(img/ikona-sql.png);
+    width: 154px;
+    height: 128px;
+    position: absolute;
+    top: 210px;
+    left: 165px;
+    z-index: 3;
+}
+.jq{
+    background-image: url(img/ikona-jq.png);
+    width: 125px;
+    height: 128px;
+    position: absolute;
+    top: 305px;
+    left: 10px;
+    z-index: 4;
+}
+.ps{
+    background-image: url(img/ikona-ps.png);
+    width: 125px;
+    height: 128px;
+    position: absolute;
+    top: 310px;
+    left: 150px;
+    z-index: 0;
+}
+.gulp{
+    background-image: url(img/ikona-gulp.png);
+    width: 182px;
+    height: 128px;
+    position: absolute;
+    top: 390px;
+    left: 10px;
+    z-index: 2;
+}
+.git{
+    background-image: url(img/ikona-git.png);
+    width: 154px;
+    height: 128px;
+    position: absolute;
+    top: 415px;
+    left: 175px;
+    z-index: 1;
+}
+.react{
+    background-image: url(img/ikona-react.png);
+    width: 182px;
+    height: 128px;
+    position: absolute;
+    top: 495px;
+    left: 85px;
+    z-index: 1;
+}
+.scale{
+    transform: scale(.5);
+}
+.skill-lvl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.66);
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 20px;
+    z-index: 10;
+}
+   .content-skill {
+    width: 320px;
+}
+@media(max-width: 1060px){
     body{
         height: 100%;
+        font-size: 6px;
     }
    #about_me, #skill, #portfolio, #contact{
     width: 100%;
     height: 600px;
        min-height: 450px;
 }
-
+    #skill{
+        height: 670px;
+            justify-content:flex-start;
+    }
 }
 }
