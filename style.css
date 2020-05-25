@@ -524,6 +524,7 @@ a:hover{
 }
 .con-contact{
     margin: 40px;
+    
 }
 @media(max-width: 1060px){
     .html{
@@ -658,6 +659,15 @@ a:hover{
     #skill{
         height: 670px;
             justify-content:flex-start;
+    }
+    #omnie{
+        left: 10px;
+    }
+    #hobby{
+        left: 170px;
+    }
+    .con-contact{
+        font-size: 2.5em;
     }
 }
 }
