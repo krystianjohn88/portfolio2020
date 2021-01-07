@@ -1,8 +1,13 @@
 body{
     box-sizing: border-box;
     margin: 0;
+/*
     background: linear-gradient(to right top, #8cc7c3, #6bb6c0, #4ea4bf, #3e90bc, #437ab4), url("img/gplaypattern3.png");
     background-blend-mode: multiply;
+*/
+    background-image: url(img/bgv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     min-height: 900px;
     height: 100vh;
@@ -367,8 +372,8 @@ a:hover{
 }
 .card {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
 }
 
