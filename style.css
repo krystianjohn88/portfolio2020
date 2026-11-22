@@ -37,6 +37,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -47,6 +49,7 @@ body {
     font-size: 16px;
     line-height: 1.65;
     overflow-x: hidden;
+    overflow-x: clip;
     transition: background 0.5s, color 0.5s;
 }
 
@@ -141,9 +144,10 @@ img {
 .nav {
     position: fixed;
     top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1100px, calc(100% - 32px));
+    left: 16px;
+    right: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -925,8 +929,16 @@ h3 {
         padding: 24px;
     }
 
-    .s1 { left: -4%; }
-    .s2 { right: -6%; }
+    .nav {
+        top: 10px;
+        left: 12px;
+        right: 12px;
+        padding: 8px 8px 8px 18px;
+    }
+
+    .s1 { left: 0; }
+    .s2 { right: 0; }
+    .s3 { bottom: 22%; left: -2%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
